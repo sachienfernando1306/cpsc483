@@ -1,1 +1,8 @@
 hyperopt==0.1.1
+numpy
+nltk
+python-scikit
+scipy
+torch
+networkx
+math
