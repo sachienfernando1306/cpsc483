@@ -13,6 +13,9 @@ For some reason, I was running into difficulties with upolading the data directl
 
 To equip yourself with the trec dataset, simply run the _fast.py_ file, and change the label to _coarse_label_ and _fine_label_ for the 8 classifier and the 50 classifier respectively. This code should download the test and train splits into your data file. From then, proceed as all the other data. 
 
+
+build_corpus.py provides you with some starting material if you would like to process a new dataset for yourself. 
+
 **Code Usage**
 1) Remove Words: This code removes stopwords from the dataset and preprocesses the corpus for use in the graph building. 
 ```
