@@ -1,4 +1,4 @@
-# TextSGC
+# CPSC 483 Final Project
 
 Implementation of SGC for text classification following
 ([Graph Convolutional Networks for Text Classification](https://arxiv.org/abs/1809.05679)).
