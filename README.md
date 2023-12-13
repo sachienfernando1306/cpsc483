@@ -4,9 +4,20 @@ This is an implementation of a Simplified Graph Convolutional Network for Text C
 
 Requirements can be found from the _requirements.txt_ file. 
 
+Once the environment has been found below, run the following lines. 
 
+1) Remove Words: This code removes stopwords from the dataset and preprocesses the corpus for use in the graph building. 
 ```
-python train.py --dataset <dt> --tuned
+python3.11 remove_words.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
+train.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
 ```
 
-See `tuning.py` for the tuning details.
+2) Building Graph: This code takes the generated words and builds the corpus-level graph.
+```
+python3.11 build_graph.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
+```
+
+3) Train: This line of code trains the model and returns the test accuracy result
+```
+python3.11 train.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
+```
