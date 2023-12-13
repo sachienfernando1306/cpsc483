@@ -9,7 +9,6 @@ Once the environment has been found below, run the following lines.
 1) Remove Words: This code removes stopwords from the dataset and preprocesses the corpus for use in the graph building. 
 ```
 python3.11 remove_words.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
-train.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
 ```
 
 2) Building Graph: This code takes the generated words and builds the corpus-level graph.
@@ -21,3 +20,5 @@ python3.11 build_graph.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, t
 ```
 python3.11 train.py --dataset <dt> # <dt> can be any of R8, MR, ohsumed, trec, R52, 20ng
 ```
+
+Enjoy and thank you :)
